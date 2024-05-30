@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-ul li.done{
+ul li span.done{
     text-decoration: line-through;
 }
 
 ul li{
     padding-left:  2rem;
+    display: flex;
+    align-items: baseline;
 }
+

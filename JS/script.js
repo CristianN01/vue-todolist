@@ -26,6 +26,12 @@ createApp({
     }
   },
   methods: {
+    removeItem: function(event){
+        this.todoList.splice(event);
+    },
 
+    toggle: function(itemIndex){
+        this.todoList[itemIndex].done = !this.todoList[itemIndex].done;
+    }
   }
 }).mount('#app')
