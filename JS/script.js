@@ -41,6 +41,10 @@ createApp({
 
         }
         this.todoList.push(newItem);
+        this.clearItemInput();
+    },
+    clearItemInput() {
+        this.newTodoItem = '';
     }
   }
 }).mount('#app')
