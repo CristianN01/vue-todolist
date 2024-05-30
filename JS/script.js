@@ -28,7 +28,7 @@ createApp({
   },
   methods: {
     removeItem: function(event){
-        this.todoList.splice(event);
+        this.todoList.splice(event, 1);
     },
 
     toggle: function(itemIndex){

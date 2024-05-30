@@ -4,13 +4,65 @@
     box-sizing: border-box;
 }
 
-ul li span.done{
-    text-decoration: line-through;
+body{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-ul li{
-    padding-left:  2rem;
-    display: flex;
-    align-items: baseline;
+h1{
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    font-size: 2rem;
 }
+
+span, i{
+    width: 50px;
+}
+
+
+ul li.list-item{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0.50rem;
+    border-radius: 0.25rem;
+    align-items: center;
+}
+
+ul li span.done{
+    text-decoration: line-through;
+    color: red;
+}
+
+ul{
+    list-style-type: none;
+    padding: 1rem;
+    background-color: rgb(255, 185, 55);
+    border-radius: 0.25rem;
+    border-color: rgb(93, 62, 3);
+}
+
+
+section.input{
+    text-align: center;
+    padding: 0.50rem;
+    background-color: rgb(255, 185, 55) ;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+}
+
+section.todo-list-container,
+section.input {
+    max-width: 600px;
+    border-radius: 0.25rem;
+}
+
+main{
+    height: 100vh;
+    background-color: rgb(202, 132, 0);
+    padding: 2rem;
+}
+
 
