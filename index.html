@@ -30,8 +30,8 @@
             </section>
             <section class="input">
                 <div>
-                    <label for="new-todo-input"> Aggiungi un nuovo item</label>
-                    <input type="text">
+                    <label for="new-todo-input"> Aggiungi un nuovo item: </label>
+                    <input type="text" id="new-todo-input" v-model="newTodoItem" @keyup.enter="addNewItem(newTodoItem)">
                 </div>
             </section>
         </main>

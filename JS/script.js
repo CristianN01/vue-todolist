@@ -20,7 +20,8 @@ createApp({
             text:'Ammorbidente',
             done: false
           },
-        ] 
+        ],
+        newTodoItem: '',
 
       
     }
@@ -32,6 +33,14 @@ createApp({
 
     toggle: function(itemIndex){
         this.todoList[itemIndex].done = !this.todoList[itemIndex].done;
+    },
+    addNewItem: function(newContent) {
+        const newItem = {
+            text: newContent,
+            done: false,
+
+        }
+        this.todoList.push(newItem);
     }
   }
 }).mount('#app')
